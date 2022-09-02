@@ -1,7 +1,7 @@
 # Athan Time
 
 Athan is an Application to know prayer times
-[athantime.tk](athantime.tk)
+[athantime.tk](https://athantime.tk)
 
 when your open website it's will show you a from to know your location for calculation method
 
