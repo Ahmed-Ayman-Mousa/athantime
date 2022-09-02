@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 3px 4px 10px -8px #537b91;
+  background: var(--secondG);
+  & *{
+    background: var(--secondG);
+  }
+  & > button[type=submit]{
+    background: var(--thirdG);
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: Arial;
+    font-size: 20px;
+  }
+  & > div:not(:last-of-type) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    width: 95vw;
+    height: 80vh;
+    padding: 10px 13px
+  }
+}

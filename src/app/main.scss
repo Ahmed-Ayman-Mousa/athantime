@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "ArefRuqaa";
+  src: url(fonts/ArbFONTS-08.ttf);
+}
+
+:root {
+  --h1-font-size: 50px;
+  --h2-font-size: 40px;
+  --font-size: 23px;
+  --aldhabi-font: "aldhabi";
+  --bfantezy-font: "bfantezy";
+  --arefRuqaa-font: "ArefRuqaa";
+}
+
+html[theme=light]:root {
+  --thirdB: #0C98F6;
+  --secondB: #0BB8D4;
+  --main: #00EBCC;
+  --secondG: #0BD480;
+  --thirdG: #0CF653;
+  --font-color: #000359;
+}
+
+html[theme=dark]:root {
+  --thirdB: #07283d;
+  --secondB: #04282b;
+  --main: #04453c;
+  --secondG: #053b25;
+  --thirdG: #124521;
+  --font-color: #d2ebf8;
+}
+
+*{
+  color: var(--font-color);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font: {
+    family: var(--arefRuqaa-font);
+    size: var(--font-size)
+  }
+  transition-duration: .7s;
+}
+
+html, body{
+  background-color: var(--main);
+  height: 100vh;
+}
+
+h2{
+  font-size: var(--h2-font-size);
+}
+h1{
+  font-size: var(--h1-font-size);
+}
+
+#theme {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  background: var(--secondG);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 1000;
+  user-select: none;
+  opacity: 0%;
+}
+
+.space{
+  height: 10px;
+}
+
+@media (max-width: 767px) {
+  #theme {
+    top: .6em;
+  }
+}
